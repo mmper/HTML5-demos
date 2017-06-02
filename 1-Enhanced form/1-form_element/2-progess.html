@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3>H5提供的新表单元素--progress</h3>
+<form action="#">
+    <h4>2、progress 进度条</h4>
+    <!--进度条-->
+    连接中：<progress></progress>  <!--左右晃动的进度条-->
+    <br/>
+    下载进度：<progress value=".0" id="p"></progress> <!--具有指定进度百分比的进度条-->
+</form>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<script>
+    //使用定时器修改进度条的value，实现下载进度提示效果setInterval+p.value
+    var timer=setInterval(fn1,200);
+    function fn1(){
+        var v=p.value;
+        // console.log(typeof v);
+        v+=0.02;
+        p.value=v;
+        if(v>=1){
+            clearInterval(timer);//已达到100%，清除定时器
+        }
+    }
+</script>
+</body>
+</html>
