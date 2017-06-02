@@ -1,53 +1,53 @@
 # HTML5 demos
-HTML5ÖĞ±íµ¥µÄĞÂÌØĞÔ
-  (1)ĞÂµÄinput type  	<input type="?">
-	H4ÖĞµÄinput type£ºtext¡¢password¡¢radio¡¢checkbox¡¢file¡¢hidden¡¢submit¡¢reset¡¢image
-	H5ÖĞµÄinput type£ºemail¡¢url¡¢number¡¢tel¡¢search¡¢range¡¢color¡¢date¡¢month¡¢week
-  (2)ĞÂµÄ±íµ¥ÔªËØ
-	H4ÖĞµÄ±íµ¥ÔªËØ£ºinput¡¢textarea¡¢select/option¡¢label¡¢button(Ä¬ÈÏtypeÊÇsubmit)
-	H5ÖĞĞÂÔöµÄ±íµ¥ÔªËØ£ºdatalist¡¢progress¡¢meter¡¢output
-  (3)±íµ¥ÔªËØµÄĞÂÊôĞÔ
-    1£©placeholder Õ¼Î»×Ö·û¡¢
-    <input value="tom" placeholder="ÇëÊäÈëÓÃ»§Ãû">£¬Óëvalue²»Í¬£¬²»ÄÜÓÃÓÚÌá½»
-      placeholder="ÌáÊ¾ĞÔÎÄ×Ö"
-    2£©autofocus ×Ô¶¯»ñÈ¡ÊäÈë½¹µã¡¢
+### HTML5ä¸­è¡¨å•çš„æ–°ç‰¹æ€§
+  #### (1)æ–°çš„input type  	<input type="?">
+	H4ä¸­çš„input typeï¼štextã€passwordã€radioã€checkboxã€fileã€hiddenã€submitã€resetã€image
+	H5ä¸­çš„input typeï¼šemailã€urlã€numberã€telã€searchã€rangeã€colorã€dateã€monthã€week
+ #### (2)æ–°çš„è¡¨å•å…ƒç´ 
+	H4ä¸­çš„è¡¨å•å…ƒç´ ï¼šinputã€textareaã€select/optionã€labelã€button(é»˜è®¤typeæ˜¯submit)
+	H5ä¸­æ–°å¢çš„è¡¨å•å…ƒç´ ï¼šdatalistã€progressã€meterã€output
+  #### (3)è¡¨å•å…ƒç´ çš„æ–°å±æ€§
+    1ï¼‰placeholder å ä½å­—ç¬¦ã€
+    <input value="tom" placeholder="è¯·è¾“å…¥ç”¨æˆ·å">ï¼Œä¸valueä¸åŒï¼Œä¸èƒ½ç”¨äºæäº¤
+      placeholder="æç¤ºæ€§æ–‡å­—"
+    2ï¼‰autofocus è‡ªåŠ¨è·å–è¾“å…¥ç„¦ç‚¹ã€
     <input autofocus>
-      autofocusÒ³ÃæÉÏÖ»ÒªÒ»¸ö£¬µ«Èç¹ûÓĞÁ½¸öÊ±£¬Ä¬ÈÏµÚÒ»¸ö×Ô¶¯»ñÈ¡½¹µã
-      ÔÚjs¶ÔÏóÖĞÆäÖµÄ¬ÈÏÎªfalse
-    3£©multiple ÔÊĞíÊäÈë¿òÖĞ³öÏÖ¶à¸öÊäÈë£¨ÓÃ¶ººÅ·Ö¸ô£©£¬Ò»°ãĞèÒªºÍÌØÊâµÄÊäÈë×éºÏÊ¹ÓÃ£¬ÈçÓÊÏäÊäÈëÓò£¬urlµÈ¡¢
+      autofocusé¡µé¢ä¸Šåªè¦ä¸€ä¸ªï¼Œä½†å¦‚æœæœ‰ä¸¤ä¸ªæ—¶ï¼Œé»˜è®¤ç¬¬ä¸€ä¸ªè‡ªåŠ¨è·å–ç„¦ç‚¹
+      åœ¨jså¯¹è±¡ä¸­å…¶å€¼é»˜è®¤ä¸ºfalse
+    3ï¼‰multiple å…è®¸è¾“å…¥æ¡†ä¸­å‡ºç°å¤šä¸ªè¾“å…¥ï¼ˆç”¨é€—å·åˆ†éš”ï¼‰ï¼Œä¸€èˆ¬éœ€è¦å’Œç‰¹æ®Šçš„è¾“å…¥ç»„åˆä½¿ç”¨ï¼Œå¦‚é‚®ç®±è¾“å…¥åŸŸï¼Œurlç­‰ã€
     <input type="email" multiple>
-    4£©form ÓÃÓÚ°ÑÊäÈëÓò·ÅÖÃµ½FORMÍâ²¿¡¢
+    4ï¼‰form ç”¨äºæŠŠè¾“å…¥åŸŸæ”¾ç½®åˆ°FORMå¤–éƒ¨ã€
     <form id="f5"></form>
     	  <input form="f5">
-          ÔÚjs¶ÔÏóÖĞÆäÖµÄ¬ÈÏÎª¡°¡±£¬¿Õ×Ö·û´®
-     ÔÚinputÖĞÓÃformÊôĞÔÖ¸¶¨ËùÊôµÄ±íµ¥µÄid£¬ÄÄ¸öinputÒªÌá½»£¬Ë­Ìí¼ÓformÊôĞÔ
-  	5£©required ±ØÌîÏî£¬ÄÚÈİ²»ÄÜÎª¿Õ¡¢
+          åœ¨jså¯¹è±¡ä¸­å…¶å€¼é»˜è®¤ä¸ºâ€œâ€ï¼Œç©ºå­—ç¬¦ä¸²
+     åœ¨inputä¸­ç”¨formå±æ€§æŒ‡å®šæ‰€å±çš„è¡¨å•çš„idï¼Œå“ªä¸ªinputè¦æäº¤ï¼Œè°æ·»åŠ formå±æ€§
+  	5ï¼‰required å¿…å¡«é¡¹ï¼Œå†…å®¹ä¸èƒ½ä¸ºç©ºã€
   	<input required>
-  	6)maxlength£ºÖ¸¶¨×Ö·û´®µÄ×î´ó³¤¶È
-    <input maxlength="9">£¬³¬¹ı9¾Í²»ÈÃÊäÈë
-    7)minlength£ºÖ¸¶¨×Ö·û´®µÄ×îĞ¡³¤¶È
-    <input minlength="6"> ÓĞÊäÈëµÄÌõ¼şÏÂminlength²ÅÉúĞ§£¬ËùÓĞ×îºÃ´îÅärequiredÒ»ÆğÊ¹ÓÃ
-    8)max£ºÖ¸¶¨Êı×ÖµÄ×î´óÖµ
+  	6)maxlengthï¼šæŒ‡å®šå­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦
+    <input maxlength="9">ï¼Œè¶…è¿‡9å°±ä¸è®©è¾“å…¥
+    7)minlengthï¼šæŒ‡å®šå­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦
+    <input minlength="6"> æœ‰è¾“å…¥çš„æ¡ä»¶ä¸‹minlengthæ‰ç”Ÿæ•ˆï¼Œæ‰€æœ‰æœ€å¥½æ­é…requiredä¸€èµ·ä½¿ç”¨
+    8)maxï¼šæŒ‡å®šæ•°å­—çš„æœ€å¤§å€¼
    	<input max="60">
-    9)min£ºÖ¸¶¨Êı×ÖµÄ×îĞ¡Öµ
+    9)minï¼šæŒ‡å®šæ•°å­—çš„æœ€å°å€¼
     <input min="18">
-    10)pattern£ºÖ¸¶¨ÊäÈë±ØĞè·ûºÏµÄÕıÔò±í´ïÊ½
-    <input pattern="^1[35789]\d{9}$">   ^$¿ÉÒÔÊ¡ÂÔ²»Ğ´
-      Ö»ÔÚÓĞÊäÈëµÄÇé¿öÏÂ²ÅÉúĞ§£¬ËùÓĞÓërequire´îÅäÊ¹ÓÃ
-    <input type="tel"/>£¬»ù±¾·ÏÎï£¬²»»áÓĞÑéÖ¤
-         ÒÔÉÏ6¸öÔÚÕæÕıÏîÄ¿ÖĞ»ù±¾²»ÔõÃ´ÓÃ£¬ÑùÊ½Ì«³ó£¬²»ÄÜ×Ô¶¨Òå
-    ÉÏÊöÑéÖ¤ÊôĞÔ»áÓ°Ïì±íµ¥ÔªËØ¶ÔÓ¦µÄJS¶ÔÏóµÄvalidityÊôĞÔ¡£
-  (4)H5ĞÂÔöÓëÑéÖ¤Ïà¹ØµÄJS¶ÔÏó¼¶ÊôĞÔ
-    input.validity {			ÊäÈë¿òµÄÑéÖ¤ÓĞĞ§ĞÔ
-  	badInput:	false			ÎŞĞ§µÄÊäÈë£¬ÈçnumberÊäÈë×ÖÄ¸
-  	customError:false		´æÔÚ×Ô¶¨Òå´íÎó
-  	patternMismatch:false	²»Æ¥ÅäÖ¸¶¨µÄÕıÔò±í´ïÊ½
-  	rangeOverflow:false	ÖµÉÏÒç³ö
-  	rangeUnderflow:false	ÖµÏÂÒç³ö
-  	stepMismatch:false		²½³¤²»Æ¥Åä
-  	tooLong:false			ÄÚÈİÌ«³¤
-  	tooShort:false			ÄÚÈİÌ«¶Ì
-  	typeMismatch:false		ÀàĞÍ²»Æ¥Åä
-  	valueMissing:false		ÖµÈ±Ê§
-  	valid:true				µ±Ç°ÊäÈëÖµÓĞĞ§
+    10)patternï¼šæŒ‡å®šè¾“å…¥å¿…éœ€ç¬¦åˆçš„æ­£åˆ™è¡¨è¾¾å¼
+    <input pattern="^1[35789]\d{9}$">   ^$å¯ä»¥çœç•¥ä¸å†™
+      åªåœ¨æœ‰è¾“å…¥çš„æƒ…å†µä¸‹æ‰ç”Ÿæ•ˆï¼Œæ‰€æœ‰ä¸requireæ­é…ä½¿ç”¨
+    <input type="tel"/>ï¼ŒåŸºæœ¬åºŸç‰©ï¼Œä¸ä¼šæœ‰éªŒè¯
+         ä»¥ä¸Š6ä¸ªåœ¨çœŸæ­£é¡¹ç›®ä¸­åŸºæœ¬ä¸æ€ä¹ˆç”¨ï¼Œæ ·å¼å¤ªä¸‘ï¼Œä¸èƒ½è‡ªå®šä¹‰
+    ä¸Šè¿°éªŒè¯å±æ€§ä¼šå½±å“è¡¨å•å…ƒç´ å¯¹åº”çš„JSå¯¹è±¡çš„validityå±æ€§ã€‚
+ #### (4)H5æ–°å¢ä¸éªŒè¯ç›¸å…³çš„JSå¯¹è±¡çº§å±æ€§
+    input.validity {	        //è¾“å…¥æ¡†çš„éªŒè¯æœ‰æ•ˆæ€§
+  	badInput:false		//æ— æ•ˆçš„è¾“å…¥ï¼Œå¦‚numberè¾“å…¥å­—æ¯
+  	customError:false	//å­˜åœ¨è‡ªå®šä¹‰é”™è¯¯
+  	patternMismatch:false	//ä¸åŒ¹é…æŒ‡å®šçš„æ­£åˆ™è¡¨è¾¾å¼
+  	rangeOverflow:false	//å€¼ä¸Šæº¢å‡º
+  	rangeUnderflow:false	//å€¼ä¸‹æº¢å‡º
+  	stepMismatch:false	//æ­¥é•¿ä¸åŒ¹é…
+  	tooLong:false		//å†…å®¹å¤ªé•¿
+  	tooShort:false		//å†…å®¹å¤ªçŸ­
+  	typeMismatch:false	//ç±»å‹ä¸åŒ¹é…
+  	valueMissing:false	//å€¼ç¼ºå¤±
+  	valid:true		//å½“å‰è¾“å…¥å€¼æœ‰æ•ˆ
   }
