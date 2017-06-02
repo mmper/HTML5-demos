@@ -1,7 +1,7 @@
-# ÔöÇ¿ĞÍ±íµ¥
-#### ĞÂµÄinput type£º
-* email¡¢tel¡¢number¡¢url¡¢search¡¢range¡¢color¡¢date¡¢month¡¢week
-#### ĞÂµÄ±íµ¥ÔªËØ£º
-* datalist/option¡¢progress¡¢meter¡¢output
-#### ±íµ¥ÔªËØµÄĞÂÊôĞÔ£º
-* placeholder¡¢autofocus¡¢multiple¡¢form¡¢required¡¢minlength¡¢maxlength¡¢min¡¢max¡¢pattern
+# å¢å¼ºå‹è¡¨å•
+#### æ–°çš„input typeï¼š
+* emailã€telã€numberã€urlã€searchã€rangeã€colorã€dateã€monthã€week
+#### [æ–°çš„è¡¨å•å…ƒç´ ï¼š](https://github.com/mmper/HTML5-demos/tree/master/1-Enhanced%20form/1-form_element)
+* datalist/optionã€progressã€meterã€output
+#### [è¡¨å•å…ƒç´ çš„æ–°å±æ€§ï¼š]()
+* placeholderã€autofocusã€multipleã€formã€requiredã€minlengthã€maxlengthã€minã€maxã€pattern
