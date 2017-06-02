@@ -1,5 +1,4 @@
-# HTML5 demos
-### HTML5中表单的新特性
+## HTML5中表单的新特性
   #### (1)新的input type  	<input type="?">
 	H4中的input type：text、password、radio、checkbox、file、hidden、submit、reset、image
 	H5中的input type：email、url、number、tel、search、range、color、date、month、week
