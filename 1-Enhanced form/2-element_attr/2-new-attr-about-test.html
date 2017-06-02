@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3>H5提供的表单元素的新属性，验证相关</h3>
+<form action="2.php">
+    <h4>1、required 必填项，不允许为空</h4>
+    用户名：<input type="text" name="uname" id="uname" required/>
+    console.dir(uname);
+    <h4>2、minlength 指定字符串的最小长度</h4>
+    密码：<input type="text" minlength="3" required/>
+    <h4>3、maxlength 指定字符串的最da长度</h4>
+    密码：<input type="text" maxlength="9"/>
+    <h4>4、max/min 指定数字的最大值/最小值</h4>
+    年龄值：<input type="number" max="60" min="18" required/>
+    <h4>5、pattern 指定输入必需符合的正则表达式</h4>
+    手机号码：<input type="text" pattern="^1[35789]\d{9}$" required/>
+    手机号码：<input type="tel"/>
+    <br/><br/>
+    <input type="submit" value="提交"/>
+</form>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<script>
+
+</script>
+</body>
+</html>
