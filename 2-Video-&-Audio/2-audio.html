@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input[type=checkbox]{
+            margin: 4px;
+            width: 20px;
+            height:20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<h3>H5新增特性：音频播放</h3>
+<h4>display:none</h4>
+<audio src=""></audio>
+<br/>
+<h4>display:block,增加播放控件</h4>
+<audio src="res/bg.mp3" controls></audio>
+<h4>不指定src</h4>
+<audio controls>
+    <source src="res/bg.mp3">
+    <source src="res/bg.ogg">
+    <source src="res/bg.wav">
+    您的浏览器不支持AUDIO播放！
+</audio>
+<h4>使用复选框控制网页背景音乐</h4>
+<audio src="res/bg.mp3" id="au" autoplay loop></audio>
+<br/>
+<label>
+    <!--使用复选框控制网页背景音乐-->
+    <!--要求：音量实现淡入和淡出,
+    当前IOS中Safari浏览器不支持audio标签，可以使用video实现音频播放
+    -->
+    <input type="checkbox" id="cb" checked/>播放背景音乐
+</label>
+<script>
+    au.volume=.2;
+    cb.onchange=function(){
+        if(cb.checked){
+            au.play();
+            var timer=setInterval(function(){
+                var v=au.volume;
+                v+=0.1;
+                au.volume=v;
+                if(v>=1){
+                    clearInterval(timer);
+                }
+            },500);
+        }else{
+            au.pause();
+        }
+    };
+
+</script>
+<br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

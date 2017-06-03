@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body>div{
+            text-align: center;
+        }
+        #containter{
+            position: relative;
+        }
+        #m,#ad{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            display: none;
+            cursor: pointer;
+        }
+        #m{
+            margin-left: -32px;
+            margin-top: -32px;
+        }
+        #ad{
+            margin-left: -185px;
+            margin-top: -115px;
+        }
+    </style>
+</head>
+<body>
+<h3>H5新增特性之三：视频播放--自定义样式</h3>
+<div id="containter">
+    <h4>video 视频</h4>
+    <video id="v" preload="auto">
+        <source src="res/birds.mp4">
+        您的浏览器不支持VIDEO播放！
+    </video>
+    <img src="img/banner01.jpg" id="ad"/>
+    <img src="img/play.png" id="m"/>
+</div>
+<script>
+    containter.onmouseenter=function(){
+        m.style.display="block";
+    };
+    containter.onmouseleave=function(){
+        m.style.display="none";
+    };
+    m.onclick=function(){
+        if(v.paused){
+            v.play();
+            v.style.opacity="1";
+            m.src="img/pause.png";
+        }else{
+            v.pause();
+            v.style.opacity=".6";
+            m.src="img/play.png";
+        }
+    };
+    //视频播放就隐藏广告
+    v.onplay=function(){
+        ad.style.display="none";
+    };
+    //视频播放就显示广告
+    v.onpause=function(){
+        ad.style.display="block";
+        ad.style.opacity="1";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h3>H5中的视频播放</h3>
+aa<video></video>bb
+
+<hr/>
+<video src="res/birds.mp4">
+    您的浏览器不支持VIDEO标签！
+</video>
+<hr/>
+<video>
+    <!--H5新增的VIDEO标签是一个300*150的inline-block，
+    若指定了src视频源，会自动用第一帧的宽高撑开行内块元素。
+    -->
+    <source src="res/birds.mp4">
+    <!--<source src="res/birds.ogg">-->
+    <!--<source src="res/birds.webm">-->
+    您的浏览器不支持VIDEO标签！
+</video>
+
+<h3>H5中的视频播放--成员属性</h3>
+<video id="v6" src="res/birds.mp4" controls loop preload="auto" poster="img/3.jpg"></video>
+<script>
+    v6.volume = 0.3;
+    v6.playbackRate = 0.5;
+</script>
+</body>
+</html>
