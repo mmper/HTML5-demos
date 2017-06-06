@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      text-align: center;
+    }
+    canvas {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>H5新特性——使用渐变对象</h1>
+  <canvas id="c" width="500" height="400">
+    您的浏览器不支持CANVAS绘图！
+  </canvas>
+  <script>
+    var ctx = c.getContext('2d');
+
+    ctx.textBaseline = 'top';
+    ctx.font = '60px SimHei';
+
+    var str = '哒哒哒哒哒';
+    var txtWidth = ctx.measureText(str).width;
+
+    //ctx.strokeStyle = '#f00';
+    //创建渐变对象
+    var g = ctx.createLinearGradient(0,0,txtWidth,0);
+    //添加颜色点
+    g.addColorStop(0, '#f00');
+    g.addColorStop(0.5, '#ff0');
+    g.addColorStop(1, '#0f0');
+    ctx.strokeStyle = g;  //将渐变对象设置为描边样式
+
+    ctx.strokeText(str, 0, 0);
+
+
+    var g2 = ctx.createLinearGradient(100,100, 100, 300);
+    g2.addColorStop(0, '#f00');
+    g2.addColorStop(1, '#fff');
+    ctx.fillStyle = g2;
+    ctx.fillRect(100, 100, 50, 200);
+
+  </script>
+</body>
+</html>

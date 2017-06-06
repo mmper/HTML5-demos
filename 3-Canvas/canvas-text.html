@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      text-align: center;
+    }
+    canvas {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>H5新特性——文本</h1>
+  <canvas id="c" width="500" height="400">
+    您的浏览器不支持CANVAS绘图！
+  </canvas>
+  <script>
+    var ctx = c.getContext('2d');
+
+    ctx.textBaseline = 'top';
+    ctx.font = '30px SimHei';
+
+    var str = '我们要在一起';
+
+    //画布左上角描边文本
+    ctx.strokeText(str, 0, 0);
+
+    //画布右上角描边文本
+    ctx.strokeStyle = '#00f';
+    var txtWidth = ctx.measureText(str).width;
+    ctx.strokeText(str, 500-txtWidth, 0);
+
+    //画布左下角填充文本
+    ctx.fillText(str, 0, 400-30);
+
+    //画布右下角填充文本
+    ctx.fillStyle = '#00f';
+    ctx.fillText(str, 500-txtWidth, 400-30);
+
+    //画布正中央描边文本
+    ctx.strokeText(str, 250-txtWidth/2, 200-30/2);
+
+
+  </script>
+</body>
+</html>
