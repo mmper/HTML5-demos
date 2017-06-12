@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # HTML5高级新特性---SVG
 
-=======
 ### SVG绘图
 * Scalable Vector Graph：可缩放的矢量图
 	            Canvas绘图	                    SVG绘图
@@ -39,10 +37,8 @@ stroke-linecap（指定线头的样式）="  butt:   默认，向线条的每个末端添加平直的边缘
   不能使用IMG置于SVG画布上！只能使用：
   <image xlink:href="disc.png" width="200" height="200" x="" y=""></image>
 
-
 网页中可用的绘图技术：
 (1)Canvas绘图 --H5新增的原生技术，是一种2D JS位图绘图技术
 (2)SVG绘图 --H5采纳的已有技术，是一种2D 标签 矢量图绘图技术
 (3)WebGL绘图 --尚未采纳为H5标准，是一种2D/3D JS绘图技术，具体可参考three.js
->>>>>>> origin/master
 
