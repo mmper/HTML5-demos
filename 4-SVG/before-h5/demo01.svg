@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Namespace：名称空间，指定当前文档中的标签出现的语境，告诉浏览器如何处理这些标签-->
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100"></rect>
+</svg>
